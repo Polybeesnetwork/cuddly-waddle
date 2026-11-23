@@ -1,0 +1,215 @@
+[
+  {
+    "name": "desktop-1440x900",
+    "viewport": 1440,
+    "docWidth": 1440,
+    "overflow": false,
+    "styleLoaded": true,
+    "sidebar": {
+      "x": 0,
+      "w": 248,
+      "h": 900
+    },
+    "main": {
+      "x": 248,
+      "w": 1192,
+      "h": 1075
+    },
+    "hero": {
+      "x": 290,
+      "w": 1108,
+      "h": 314
+    },
+    "copy": {
+      "x": 291,
+      "w": 581,
+      "h": 312
+    },
+    "art": {
+      "x": 767,
+      "w": 630,
+      "h": 312
+    },
+    "title": {
+      "x": 319,
+      "w": 525,
+      "h": 93
+    },
+    "grid": "270.25px 270.25px 270.25px 270.25px",
+    "cta": {
+      "x": 319,
+      "w": 124,
+      "h": 43
+    },
+    "rpcStatus": "Checking…",
+    "interactions": {
+      "nav": [
+        {
+          "view": "wallets",
+          "active": true
+        },
+        {
+          "view": "flows",
+          "active": true
+        },
+        {
+          "view": "signals",
+          "active": true
+        },
+        {
+          "view": "research",
+          "active": true
+        },
+        {
+          "view": "command",
+          "active": true
+        }
+      ],
+      "notifications": true,
+      "dialog": true,
+      "invalidAddressValidation": "Enter a valid EVM address.",
+      "noteSaved": true,
+      "viewSaved": true,
+      "rpcStatusUnderBlockedRPC": "Degraded"
+    },
+    "consoleErrors": []
+  },
+  {
+    "name": "laptop-1280x720",
+    "viewport": 1280,
+    "docWidth": 1280,
+    "overflow": false,
+    "styleLoaded": true,
+    "sidebar": {
+      "x": 0,
+      "w": 248,
+      "h": 720
+    },
+    "main": {
+      "x": 248,
+      "w": 1032,
+      "h": 1091
+    },
+    "hero": {
+      "x": 286,
+      "w": 955,
+      "h": 330
+    },
+    "copy": {
+      "x": 287,
+      "w": 500,
+      "h": 328
+    },
+    "art": {
+      "x": 697,
+      "w": 543,
+      "h": 328
+    },
+    "title": {
+      "x": 315,
+      "w": 444,
+      "h": 88
+    },
+    "grid": "232.047px 232.062px 232.047px 232.062px",
+    "cta": {
+      "x": 315,
+      "w": 124,
+      "h": 43
+    },
+    "rpcStatus": "Checking…"
+  },
+  {
+    "name": "tablet-768x1024",
+    "viewport": 768,
+    "docWidth": 768,
+    "overflow": false,
+    "styleLoaded": true,
+    "sidebar": {
+      "x": 0,
+      "w": 220,
+      "h": 1024
+    },
+    "main": {
+      "x": 220,
+      "w": 548,
+      "h": 1450
+    },
+    "hero": {
+      "x": 242,
+      "w": 504,
+      "h": 318
+    },
+    "copy": {
+      "x": 243,
+      "w": 351,
+      "h": 308
+    },
+    "art": {
+      "x": 389,
+      "w": 356,
+      "h": 316
+    },
+    "title": {
+      "x": 265,
+      "w": 307,
+      "h": 69
+    },
+    "grid": "248.5px 248.5px",
+    "cta": {
+      "x": 265,
+      "w": 124,
+      "h": 43
+    },
+    "rpcStatus": "Checking…"
+  },
+  {
+    "name": "mobile-390x844",
+    "viewport": 390,
+    "docWidth": 390,
+    "overflow": false,
+    "styleLoaded": true,
+    "sidebar": {
+      "x": 0,
+      "w": 390,
+      "h": 64
+    },
+    "main": {
+      "x": 0,
+      "w": 390,
+      "h": 1488
+    },
+    "hero": {
+      "x": 10,
+      "w": 370,
+      "h": 365
+    },
+    "copy": {
+      "x": 11,
+      "w": 368,
+      "h": 263
+    },
+    "art": {
+      "x": 59,
+      "w": 320,
+      "h": 218
+    },
+    "title": {
+      "x": 26,
+      "w": 338,
+      "h": 67
+    },
+    "grid": "182px 182px",
+    "cta": {
+      "x": 26,
+      "w": 109,
+      "h": 41
+    },
+    "rpcStatus": "Checking…"
+  },
+  {
+    "name": "campaign-mobile",
+    "width": 390,
+    "docWidth": 390,
+    "overflow": false
+  }
+]
