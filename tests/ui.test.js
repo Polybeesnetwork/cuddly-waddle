@@ -1,6 +1,10 @@
-import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';
-const html=await readFile(new URL('../index.html',import.meta.url),'utf8');const app=await readFile(new URL('../app/main.js',import.meta.url),'utf8');
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+const html=await readFile(new URL('../index.html',import.meta.url),'utf8');
+const app=await readFile(new URL('../app/main.js',import.meta.url),'utf8');
 test('UI starts from honest non-operational loading state and has degradations',()=>{assert.match(html,/id="rpcStatus">Checking…/);assert.doesNotMatch(html,/class="status-text"[^>]*>Operational/);assert.match(app,/markRpc\(false/);assert.match(app,/RPC degraded/);assert.match(app,/markRpc\(true/)});
 test('all intelligence views are present and nav controls target those views',()=>{for(const view of ['command','wallets','flows','signals','research']){assert.match(html,new RegExp(`data-view="${view}"`));assert.match(html,new RegExp(`data-view-panel="${view}"`))}});
 test('wallet search, notes, saved views, signals and campaign route are wired',()=>{for(const id of ['walletSearch','walletSearchPage','saveNote','saveView','notifications','securityAlertList','flowCanvas'])assert.ok(html.includes(`id="${id}"`));assert.match(html,/href="\/campaign\.html"/);assert.match(app,/data-view-open/);assert.match(app,/data-note-remove/)});
+test('all literal dashboard selectors map to unique DOM ids',()=>{const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(match=>match[1]);assert.equal(new Set(ids).size,ids.length);for(const [,id] of app.matchAll(/\$\('#([^']+)'\)/g))assert.ok(ids.includes(id),`missing dashboard element #${id}`)});
 test('untrusted chain and local-note strings are escaped before rendering',()=>{assert.match(app,/function esc\(v\)/);assert.match(app,/esc\(e\.asset\)/);assert.match(app,/esc\(n\.body\)/);assert.match(app,/esc\(txLink\(e\.hash\)\)/)});
