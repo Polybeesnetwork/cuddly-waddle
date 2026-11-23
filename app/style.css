@@ -4,3 +4,4 @@
 @media(min-width:761px) and (max-width:1050px){.hero{min-height:318px}.hero-copy{max-width:64%}.hero-art{left:33%}.hero h1{font-size:34px}.dashboard-grid{grid-template-columns:1fr}.activity-surface,.watch-surface{min-height:0}.wallet-list{max-height:240px;overflow:auto}.metrics-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.wallet-detail-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 .saved-view-open{padding:0;border:0;background:transparent;color:#d9e5e9;font-size:8px;text-align:left}.saved-view-open:hover{color:var(--cyan)}
+.saved-view-open{padding:0;border:0;background:transparent;color:#d9e5e9;font-size:8px;text-align:left}.saved-view-open:hover{color:var(--cyan)}
