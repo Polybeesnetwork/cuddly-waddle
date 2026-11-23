@@ -8,7 +8,7 @@ const TOKEN_META_ABI = [
   { type:'function', name:'symbol', stateMutability:'view', inputs:[], outputs:[{type:'string'}] }
 ];
 export class RpcPool {
-  constructor({ urls=RPC_URLS, fetchImpl=fetch, timeoutMs=8000, minIntervalMs=350 }={}) { this.urls=urls; this.fetch=fetchImpl; this.timeoutMs=timeoutMs; this.minIntervalMs=minIntervalMs; this.nextAt=0; this.sequence=0; }
+  constructor({ urls=RPC_URLS, fetchImpl=fetch, timeoutMs=8000, minIntervalMs=350 }={}) { this.urls=urls; this.fetch=fetchImpl.bind(globalThis); this.timeoutMs=timeoutMs; this.minIntervalMs=minIntervalMs; this.nextAt=0; this.sequence=0; }
   async request(method, params=[]) {
     let lastError;
     for (const url of this.urls) {
