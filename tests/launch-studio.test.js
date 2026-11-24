@@ -10,6 +10,9 @@ test('Launch Studio builds local specs but does not deploy, fund, or request wal
   assert.ok(js.includes('new Blob([JSON.stringify(brief,null,2)]'));
   assert.ok(!js.includes('eth_sendTransaction'));
   assert.ok(!js.includes('window.ethereum'));
+  assert.ok(js.includes("KEY='beacon.launch-studio.draft.v1'"));
+  assert.ok(js.includes('localStorage.setItem(KEY,JSON.stringify(values))'));
+  assert.ok(js.includes('function restoreDraft()'));
 });
 test('Launch Studio has a fixed-supply token concept and crowdfunding milestone/all-or-nothing drafts',()=>{
   for(const id of ['tokenName','tokenSymbol','tokenSupply','tokenDecimals','campaignGoal','campaignDays','campaignPurpose'])assert.ok(html.includes(`id="${id}"`));

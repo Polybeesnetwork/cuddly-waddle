@@ -1,6 +1,6 @@
 # Launch Studio prototype
 
-The `launch-studio.html` route is a client-side specification builder for two project concepts: a fixed-supply or holder-burn token and an all-or-nothing/milestone crowdfunding plan. It previews values and downloads a JSON brief. No private information is submitted to a server.
+The `launch-studio.html` route is a client-side specification builder for two project concepts: a fixed-supply or holder-burn token and an all-or-nothing/milestone crowdfunding plan. It previews values, autosaves drafts to browser local storage, and downloads a JSON brief. No draft or private information is submitted to a server.
 
 ## What this release does not do
 
